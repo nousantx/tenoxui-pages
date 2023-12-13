@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/tenoxui/dist/css/index.min.css"
+    />
+    <style>
+      :root {
+        --dark: #0d0d0d;
+        --light: #ecf9fc;
+      }
+      .figtree {
+        font-family: "figtree", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="figtree">
+    <header class="header bg-red" hidden></header>
+    <h1>TenoxUI Pages Template</h1>
+    <p>Include Multi Props and Multi Styles simple usage from TenoxUI v0.3.0</p>
+
+    <script type="module">
+      import TenoxUI, {
+        MakeProp,
+        MakeStyle,
+        MultiStyles,
+        MultiProps,
+      } from "../node_modules/tenoxui/dist/js/index.js";
+
+      let MyStyles = {
+        body: "bg-[dark] w-100% h-mn-100svh tc-[light] display-flex flex-parent-center fd-[col]",
+      };
+
+      let MyProps = {
+        "fx-po": ["justifyContent", "alignItems"],
+      };
+
+      MultiProps(MyProps);
+      MultiStyles(MyStyles);
+      TenoxUI();
+    </script>
+  </body>
+</html>
