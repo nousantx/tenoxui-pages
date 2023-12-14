@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finenl Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/tenoxui/dist/css/index.min.css"
+    />
+    <link rel="stylesheet" href="../global.css" />
+    <style>
+      :root {
+        --primary: rgb(42, 228, 166);
+        --about-bg: #fdfcf8;
+        --light: #f5eed3;
+        --sub-light: #ddd5b6;
+        --dark: #18191e;
+        --sub-dark: #25262c;
+        --nav: rgba(24, 25, 30, 0.3);
+        --fix-dark: #18191e;
+        --darkmode-changer: "flare";
+        --srow: row;
+        --sfull: flex-start;
+      }
+      .darkmode {
+        --darkmode-changer: "nights_stay";
+        --dark: #f5eed3;
+        --sub-dark: #ddd5b6;
+        --light: #18191e;
+        --sub-light: #25262c;
+        --about-bg: #25262c;
+        color: var(--light);
+      }
+      #theme > span::before {
+        content: var(--darkmode-changer);
+        font-family: "Material Icons Outlined";
+      }
+      body {
+        font-family: "figtree", sans-serif !important;
+      }
+      .md-only {
+        display: none !important;
+      }
+      @media screen and (min-width: 768px) {
+        :root {
+          --srow: column;
+          --sfull: stretch;
+        }
+        .md-only {
+          display: flex !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Script -->
+    <script type="module">
+      import TenoxUI, {
+        MakeProp,
+        MakeStyle,
+        MultiStyles,
+        MultiProps,
+      } from "../node_modules/tenoxui/dist/js/index.js";
+      let MyStyles = {
+        body: "bg-[light] w-100% h-mn-100svh tc-[dark]",
+
+        main: "w-100% h-mn-100svh display-flex flex-parent-center fd-[col]",
+
+        section:
+          "w-100% w-mx-1000px display-flex fd-[col] flex-parent-center p-2rem gap-1rem",
+
+        ".fx-ctr": "display-flex ai-center jc-center",
+
+        ".fx-str": "display-flex flex-parent-[flex-start]",
+
+      };
+
+      let MyProps = {
+        "fx-po": ["justifyContent", "alignItems"],
+      };
+
+      MultiProps(MyProps);
+      MultiStyles(MyStyles);
+      TenoxUI();
+    </script>
+    <script src="../script/darkmode.js"></script>
+  </body>
+</html>
