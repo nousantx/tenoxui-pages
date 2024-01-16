@@ -22,6 +22,7 @@ if (darkMode === "darkModeEnabled") {
   darkModeEnable();
 }
 
+// Toggle the function
 theme.addEventListener("click", function () {
   darkMode = localStorage.getItem("darkMode");
   if (darkMode !== "darkModeEnabled") {
