@@ -4,7 +4,7 @@
 :root {
   --col: column;
 }
-
+[class*="flex"] {display:flex;}
 .figtree {
   font-family: "figtree", sans-serif;
 }
@@ -17,7 +17,6 @@
   list-style: none;
   font-family: "figtree", sans-serif;
 }
-
 .material-icons,
 .material-icons-outlined,
 .material-icons-round,
