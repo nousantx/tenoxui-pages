@@ -1,33 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | TenoxUI</title>
-    <link rel="stylesheet" href="node_modules/tenoxui/dist/css/index.min.css" />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
     />
-    <style>
-      :root {
-        font-family: "figtree", sans-serif;
-        --light: #f0f0f0;
-      }
-    </style>
-  </head>
-  <body class="h-100svh flex-parent-center bg-0d0d0d tc-[light]">
-    <h1 class="ta-center">
-      Let's make simple landing page using Tenox<span class="tc-[primary]"
-        >UI</span
-      >
-    </h1>
+    <title>Pages | TenoxUI</title>
+    <meta name="description" content="HTML websites built with TenoxUI as its styles. You can use this as references." />
+    <!-- Style -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/tenoxui@latest/dist/css/index.min.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tenoxui@latest/dist/css/index.min.css"
+    />
+    <!-- Script -->
     <script
-      type="module"
-      src="node_modules/tenoxui/dist/js/index.min.js"
+      defer
+      src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.25/dist/js/tui.js"
     ></script>
+  </head>
+  <body class="h-100vh flex-parent-center bg-0d0d0d tc-white">
+    <header class="ta-center">
+      <h1 >
+        TenoxUI Pages
+      </h1>
+      <p class="tc-aaa">
+        Hello, Pal. Let's built some cool website using TenoxUI.
+      </p>
+    </header>
   </body>
 </html>
