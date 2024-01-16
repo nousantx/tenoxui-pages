@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/nousantx/tenoxui-pages#readme",
   "dependencies": {
-    "tenoxui": "^0.3.0"
+    "tenoxui": "^0.3.1"
   }
 }
