@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../global.css" />
     <link
       rel="stylesheet"
-      href="../node_modules/tenoxui/dist/css/index.min.css"
+      href="https://cdn.jsdelivr.net/npm/tenoxui@0.3.0/dist/css/index.min.css"
     />
     <link
       rel="stylesheet"
@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body class="w-mx h-mn-100svh bg-[light] tc-[dark] fx-po-center fd-[col]">
+  <body class="w-mx h-mn-100vh bg-[light] tc-[dark] fx-po-center fd-[col]">
     <header
       class="post-fixed w-mx header-0 bg-[light-opa] ph-2rem pv-1rem flex jc-[sb] bs-b-solid bw-solid bw-1px bc-[dark-opa] z-99"
     >
@@ -46,8 +46,8 @@
       </nav>
       <!-- <h1>test</h1> -->
     </header>
-    <main class="fx-po-center w-mx h-mn-100svh fd-[col]">
-      <section id="home" class="w-mx h-100svh fx-po-center p-2rem overX-hidden">
+    <main class="fx-po-center w-mx h-mn-100vh fd-[col]">
+      <section id="home" class="w-mx h-100vh fx-po-center p-2rem overX-hidden">
         <!-- Wrapper -->
         <div
           class="w-mx w-mx-1000px h-mx fx-po-center fd-[wrapper-col] gap-3rem relative"
@@ -304,11 +304,8 @@
     </main>
 
     <!-- <h1 class="">test</h1> -->
-    <script type="module">
-      import TenoxUI, {
-        MakeProp,
-      } from "../node_modules/tenoxui/dist/js/index.js";
-
+<script src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.1/dist/js/tenoxui.js"></script>
+    <script>
       MakeProp("header", ["top", "left", "right"]);
       MakeProp("fx-po", ["justifyContent", "alignItems"]);
       MakeProp("fx-w", ["flexWrap"]);
