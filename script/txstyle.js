@@ -3,7 +3,9 @@
  */
 
 defineProps({
+  bdc: ["borderColor"],
   dis: ["display"],
+  all: ["all"],
   scroll: ["scrollBehavior"],
   "fx-par": ["align-items", "justify-content"],
 });
@@ -34,6 +36,8 @@ makeStyles({
   ".text-center": "ta-center",
   ".nowrap": "white-space-nowrap",
   ".invert": "invert-1",
+  ".def-light,.light": "bg-[neutral-100] tc-[neutral-900]",
+  ".def-dark,.dark": "bg-[neutral-900] tc-[neutral-100]",
   ".text-primary": "tc-[primary-500]",
   html: "scroll-smooth",
 });
