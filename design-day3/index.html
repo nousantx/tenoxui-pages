@@ -28,9 +28,9 @@
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.25/dist/js/tui.js"></script>
   </head>
-  <body class="h-100vh bg-[neutral-900] tc-[neutral-100]">
+  <body class="h-100vh bg-[accent-900] tc-[neutral-100]">
     <nav
-      class="fixed fx-ctr jc-[sb] pv-1.3rem ph-2rem bg-[neutral-900] t-0 w-full flex-wrap"
+      class="fixed fx-ctr jc-[sb] pv-1.3rem ph-2rem bg-[accent-900] t-0 w-full flex-wrap z-999"
     >
       <ul class="fx-0% fx-start gap-1rem md-only">
         <li>
@@ -64,9 +64,9 @@
         </li>
       </ul>
     </nav>
-    <main class="fx-ctr h-mn-100vh">
-      <section id="home" class="w-full w-mx-1200px h-100vh fx-ctr p-2rem">
-        <div class="w-full flex-wrap ai-full gap-1rem">
+    <main class="fx-ctr h-mn-100vh fd-col jc-start over-hidden">
+      <section id="home" class="w-full w-mx-1200px h-mn-100vh fx-ctr p-2rem">
+        <div class="w-full flex-wrap ai-full gap-3rem">
           <div class="fx-400px relative pl-18px fx-ctr fd-col ai-start">
             <div
               class="absolute l-0 w-2px h-full bg-[primary-500] br-4px"
@@ -79,10 +79,10 @@
               <p class="rt--90deg tc-[accent-400] fw-500">Profit</p>
             </div>
             <header>
-              <div class="mb-1rem">
-                <span class="">NFT</span>
+              <div class="mb-1rem tc-[accent-200]">
+                <span>NFT</span>
                 <span class="mh-1rem">Blockchain</span>
-                <span class="">Crypto</span>
+                <span>Crypto</span>
               </div>
               <h1 class="fw-600 ff-inconsolata fs-2rem">
                 Gain good profit from your creativity and we will
@@ -127,6 +127,7 @@
                 >
                   <span
                     class="absolute ms-line b--4rem r--3rem fs-10rem tc-[accent-200]"
+                    hidden
                   >
                     dashboard
                   </span>
@@ -159,6 +160,7 @@
                 >
                   <span
                     class="absolute ms-line b--4rem r--3rem fs-10rem tc-[accent-200]"
+                    hidden
                   >
                     dashboard
                   </span>
@@ -188,7 +190,88 @@
           </div>
         </div>
       </section>
+
+      <section class="w-full relative fx-ctr h-mn-15vh">
+        <style>
+          .bss {
+            box-shadow: 0px 0px 20px 15px rgba(0, 0, 0, 0.5);
+          }
+        </style>
+        <div class="absolute w-120% h-4rem bg-[accent-500] rt-5deg fx-ctr">
+          <header class="tc-[neutral-900] fx-ctr">
+            <span class="mi mr-1rem">subtitles</span>
+            <h1 class="nowrap">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+              quo.
+            </h1>
+          </header>
+        </div>
+        <div
+          class="absolute w-120% h-4rem bg-[primary-500] bss rt--5deg fx-ctr gap-1rem"
+        >
+          <!-- Fake Brands, Maybe you want to use it? -->
+          <header class="tc-[neutral-900] fx-ctr gap-2rem">
+            <div class="fx-ctr">
+              <span class="mi-sharp fs-1rem mr-4px">gamepad</span>
+              <h1 class="fw-800 fs-1rem ff-pixelify-sans">Vna Games</h1>
+            </div>
+            <div class="fx-ctr">
+              <span class="mi-sharp fs-1.3rem mr-4px">insights</span>
+              <h1 class="fw-500 fs-1rem ff-figtree">
+                ZIVE<span class="fw-700 ff-amiri-ab">BEAUTIFY</span>
+              </h1>
+            </div>
+            <div class="fx-ctr">
+              <span class="ms-sharp fs-1.3rem mr-4px">code_off</span>
+              <h1 class="fw-700 fs-1rem ff-figtree">Binto.co</h1>
+            </div>
+            <div class="fx-ctr">
+              <span class="ms-sharp fs-1.3rem mr-4px"
+                >account_balance_wallet</span
+              >
+              <h1 class="fw-700 fs-1rem ff-figtree">Finenl</h1>
+            </div>
+            <div class="fx-ctr">
+              <span class="ms-line fs-1.3rem mr-4px">music_note</span>
+              <h1 class="fw-600 fs-1rem ff-sans-jp">期待の</h1>
+            </div>
+          </header>
+        </div>
+      </section>
+      <section
+        id="services"
+        class="w-full w-mx-1200px h-100vh fx-ctr p-2rem none"
+      ></section>
     </main>
+    <footer class="p-2rem fx-ctr jc-[sb]">
+      <div class="fx-str fd-col">
+        <header class="fx-ctr gap-5px">
+          <div class="relative box-1rem gap-1rem fx-ctr mr-8px">
+            <span
+              class="absolute ms-line rt-45deg tc-[accent-500] fs-16px fw-800 ml-14px"
+              >square</span
+            >
+            <span
+              class="absolute ms-line rt-45deg tc-[primary-500] fs-16px fw-800"
+              >square</span
+            >
+          </div>
+          <h1 class="fs-1.3rem tc-[primary-200] ff-inconsolata">Eftenary</h1>
+        </header>
+        <p class="fs-12px tc-[neutral-300]">&copy; 2024 Eften, Inc.</p>
+      </div>
+      <ul class="fx-ctr gap-1rem tc-[neutral-300]">
+        <li class="fw-500 cursor-pointer">Privacy</li>
+        <li class="fw-500 cursor-pointer">Rate</li>
+        <li class="fw-500 cursor-pointer">Download</li>
+        <li class="fw-500 cursor-pointer">NFT</li>
+        <li class="fw-500 cursor-pointer">Free</li>
+        <li class="fw-500 cursor-pointer">Premium</li>
+        <!-- <li class="fw-500 box-2rem br-8px fx-ctr bg-[primary-500]">
+          <span class="mi-round fs-1rem tc-[neutral-900]">star</span>
+        </li> -->
+      </ul>
+    </footer>
     <script src="./index.js"></script>
     <script src="../script/txstyle.js"></script>
   </body>

@@ -32,6 +32,7 @@ makeStyles({
   ".italic": "text-style-italic",
   ".rounded": "br-50%",
   ".text-center": "ta-center",
+  ".nowrap": "white-space-nowrap",
   ".invert": "invert-1",
   ".text-primary": "tc-[primary-500]",
   html: "scroll-smooth",

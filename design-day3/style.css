@@ -32,6 +32,8 @@
   --neutral-800: #4a4c45;
   --neutral-900: #252622;
 
+  /* Test Pallete */
+
   --neutral-800: #242726;
   --neutral-900: #1b1f1e;
   --prim-opa: linear-gradient(45deg, var(--neutral-800), var(--accent-800));
