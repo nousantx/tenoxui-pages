@@ -1,3 +1,6 @@
+/*!
+ * tenoxui v0.4.23
+ */
 defineProps({
   bdr: ["border"],
 });
