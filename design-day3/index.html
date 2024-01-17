@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,31 +8,188 @@
     initial-scale=1.0"
     />
     <title>Pages | TenoxUI</title>
-    <meta name="description" content="HTML websites built with TenoxUI as its styles. You can use this as references." />
+    <meta
+      name="description"
+      content="HTML websites built with TenoxUI as its styles. You can use this as references."
+    />
     <!-- Style -->
+    <link rel="stylesheet" href="../google-icons.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="preload"
-      href="https://cdn.jsdelivr.net/npm/tenoxui@latest/dist/css/index.min.css"
+      href="https://cdn.jsdelivr.net/npm/tenoxui@latest/dist/css/tui.min.css"
       as="style"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tenoxui@latest/dist/css/index.min.css"
+      href="https://cdn.jsdelivr.net/npm/tenoxui@latest/dist/css/tui.min.css"
     />
     <!-- Script -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.25/dist/js/tui.js"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.25/dist/js/tui.js"></script>
   </head>
-  <body class="h-100vh flex-parent-center bg-0d0d0d tc-white">
-    <header class="ta-center">
-      <h1 >
-        TenoxUI Pages
-      </h1>
-      <p class="tc-aaa">
-        Hello, Pal. Let's built some cool website using TenoxUI.
-      </p>
-    </header>
+  <body class="h-100vh bg-[neutral-900] tc-[neutral-100]">
+    <nav
+      class="fixed fx-ctr jc-[sb] pv-1.3rem ph-2rem bg-[neutral-900] t-0 w-full flex-wrap"
+    >
+      <ul class="fx-0% fx-start gap-1rem md-only">
+        <li>
+          <a href="#home" class="td-underline tc-[primary-500]">Overview</a>
+        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <header class="fx-ctr gap-5px fx-0% jc-[md-ctr] nav-logo">
+        <div class="relative box-1rem gap-1rem fx-ctr mr-8px">
+          <span
+            class="absolute ms-line rt-45deg tc-[accent-500] fs-16px fw-800 ml-14px"
+            >square</span
+          >
+          <span
+            class="absolute ms-line rt-45deg tc-[primary-500] fs-16px fw-800"
+            >square</span
+          >
+        </div>
+        <h1 class="fs-1.3rem tc-[primary-200] ff-inconsolata">Eftenary</h1>
+      </header>
+      <ul class="fx-ctr gap-1rem fx-0% fx-end">
+        <li><a href="#">Sign Up</a></li>
+        <li>
+          <a
+            id="signin"
+            href="#"
+            class="tc-[primary-500] pv-8px ph-1rem br-3rem bdr-[sign-btn]"
+            >Sign In</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main class="fx-ctr h-mn-100vh">
+      <section id="home" class="w-full w-mx-1200px h-100vh fx-ctr p-2rem">
+        <div class="w-full flex-wrap ai-full gap-1rem">
+          <div class="fx-400px relative pl-18px fx-ctr fd-col ai-start">
+            <div
+              class="absolute l-0 w-2px h-full bg-[primary-500] br-4px"
+            ></div>
+            <div
+              class="absolute h-full l-0 t-0 w-1rem fx-ctr gap-3rem fd-col none"
+            >
+              <p class="rt--90deg tc-[accent-200] fw-500">Buy</p>
+              <p class="rt--90deg tc-[accent-300] fw-500">Sell</p>
+              <p class="rt--90deg tc-[accent-400] fw-500">Profit</p>
+            </div>
+            <header>
+              <div class="mb-1rem">
+                <span class="">NFT</span>
+                <span class="mh-1rem">Blockchain</span>
+                <span class="">Crypto</span>
+              </div>
+              <h1 class="fw-600 ff-inconsolata fs-2rem">
+                Gain good profit from your creativity and we will
+                <span class="tc-[primary-500]">buy</span> and
+                <span class="tc-[primary-500]">sell</span> it for you!
+              </h1>
+              <p class="tc-[neutral-300] mt-8px">
+                Explore remain NFT from your mobile phone, we offer you the best
+                price for valuable NFT from trusted creator.
+              </p>
+            </header>
+            <div class="mt-2rem fx-ctr gap-1rem ai-full">
+              <a href="#" class="btn-primary">
+                Get Started
+                <span class="mi-sharp">book</span>
+              </a>
+              <a href="#" class="fx-ctr gap-8px">
+                <span
+                  class="mi-sharp box-2rem rounded tc-[primary-500] fx-ctr bg-[trans-bg] fs-1.4rem p-1rem"
+                  >play_arrow</span
+                >
+                Play Intro
+              </a>
+            </div>
+          </div>
+          <div class="fx-400px gap-1rem">
+            <header>
+              <h2 class="fw-600 fx-ctr jc-str gap-6px">
+                Trending Now
+                <span class="mi-line tc-[primary-500]">trending_up</span>
+              </h2>
+              <p class="tc-[neutral-300]">
+                Explore trending and most purchased NFT from top seller.
+              </p>
+            </header>
+            <div class="flex-wrap w-full ai-full mt-1rem gap-1rem">
+              <div
+                class="fx-200px bg-[prim-opa] tc-[neutral-100] br-8px over-hidden"
+              >
+                <div
+                  class="w-full ratio-[video] bg-[thumb-null] fx-ctr relative over-hidden"
+                >
+                  <span
+                    class="absolute ms-line b--4rem r--3rem fs-10rem tc-[accent-200]"
+                  >
+                    dashboard
+                  </span>
+                </div>
+                <div class="w-full p-1rem">
+                  <div class="fx-ctr gap-8px jc-str mb-8px">
+                    <span
+                      class="bg-[accent-500] tc-[neutral-100] ph-8px pv-3px br-3rem fw-500 fs-12px"
+                      >Dash</span
+                    >
+                    <span
+                      class="bg-[accent-500] tc-[neutral-100] ph-8px pv-3px br-3rem fw-500 fs-12px"
+                      >Dash</span
+                    >
+                  </div>
+                  <h3>Neuron Trex</h3>
+                  <p class="fs-14px fw-500 tc-[neutral-200]">13.99</p>
+                  <div
+                    class="w-full p-1rem bg-[primary-500] br-8px mt-1rem fx-ctr"
+                  >
+                    <p class="fw-600 tc-[neutral-900]">Buy Now</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fx-200px bg-[prim-opa] tc-[neutral-100] br-8px over-hidden"
+              >
+                <div
+                  class="w-full ratio-[video] bg-[thumb-null] fx-ctr relative over-hidden"
+                >
+                  <span
+                    class="absolute ms-line b--4rem r--3rem fs-10rem tc-[accent-200]"
+                  >
+                    dashboard
+                  </span>
+                </div>
+                <div class="w-full p-1rem">
+                  <div class="fx-ctr gap-8px jc-str mb-8px">
+                    <span
+                      class="bg-[accent-500] tc-[neutral-100] ph-8px pv-3px br-3rem fw-500 fs-12px"
+                      >Dash</span
+                    >
+                    <span
+                      class="bg-[accent-500] tc-[neutral-100] ph-8px pv-3px br-3rem fw-500 fs-12px"
+                      >Dash</span
+                    >
+                  </div>
+                  <h3>Neuron Trex</h3>
+                  <p class="fs-14px fw-500 tc-[neutral-200]">13.99</p>
+                  <div
+                    class="w-full p-1rem bg-[primary-500] br-8px mt-1rem fx-ctr"
+                  >
+                    <p class="fw-600 tc-[neutral-900]">Buy Now</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tenox -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+    <script src="../script/txstyle.js"></script>
   </body>
 </html>

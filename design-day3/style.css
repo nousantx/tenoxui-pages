@@ -1,3 +1,49 @@
-body {
+:root {
+  /* Primary: Mango Green */
+  --primary-100: #f7fff2;
+  --primary-200: #d2ffb6;
+  --primary-300: #b5ff79;
+  --primary-400: #9fff3d;
+  --primary-500: #91ff00;
+  --primary-600: #7ec900;
+  --primary-700: #649300;
+  --primary-800: #455c00;
+  --primary-900: #1f2600;
+
+  /* Accent: Drunk-Tank Pink */
+  --accent-100: #fff2fd;
+  --accent-200: #ffb9f7;
+  --accent-300: #fb7ef5;
+  --accent-400: #f243f3;
+  --accent-500: #d50be3;
+  --accent-600: #9e04b4;
+  --accent-700: #6c0185;
+  --accent-800: #410055;
+  --accent-900: #1b0026;
+
+  /* Neutral */
+  --neutral-100: #fbfcfa;
+  --neutral-200: #e9ede7;
+  --neutral-300: #d8ddd4;
+  --neutral-400: #c7cdc1;
+  --neutral-500: #b7bdaf;
+  --neutral-600: #93978b;
+  --neutral-700: #6e7168;
+  --neutral-800: #4a4c45;
+  --neutral-900: #252622;
+
+  --neutral-800: #242726;
+  --neutral-900: #1b1f1e;
+  --prim-opa: linear-gradient(45deg, var(--neutral-800), var(--accent-800));
+  --thumb-null: linear-gradient(45deg, var(--accent-600), var(--accent-700));
+  --trans-bg: rgba(18, 20, 20, 0.5);
+  --sign-btn: 2px solid var(--primary-500);
+}
+
+* {
   font-family: "lexend", Sans-Serif;
+}
+
+#signin:hover {
+  text-decoration: none;
 }

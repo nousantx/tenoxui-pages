@@ -1,61 +1,63 @@
-console.log(
-  TenoxUI,
-  //   MakeProp,
-  //   MakeStyle,
-  //   defineProps,
-  //   makeStyles,
-  property,
-  //   AllClasses,
-  Classes
-);
+let MyStyles = {
+  ".testimonial-card":
+    "fx-300px bg-[about-bg] br-8px p-2rem tc-[dark] display-flex fd-[col] jc-[flex-start] jc-[sb] gap-1rem",
 
-// See All Classes
+  ".testimonial-card>p": "fs-1rem",
+  ".person-name>h4": "fs-1.4rem",
+  ".person-name>p": "fs-1rem fw-500",
 
-console.log(Classes);
+  body: "bg-[light] w-100% h-mn-100vh tc-[dark]",
 
-// See All Property
+  main: "w-100% h-mn-100vh display-flex flex-parent-center fd-[col]",
 
-console.log(property);
+  section:
+    "w-100% w-mx-1000px display-flex fd-[col] flex-parent-center p-2rem gap-1rem",
 
-// Tutorial 1 : Make your first custom property
+  p: "fw-500",
 
-// 1. Add your property
+  ".ab-box":
+    "w-100% bg-[about-bg] tc-[dark] br-1rem w-mx p-2rem display-flex fd-[col] jc-center ai-[flex-start] gap-1rem",
 
-MakeProp("myFirst", ["padding"]);
+  ".sec-full": "h-mn-100vh",
 
-// 2. Make sure your property combined to remain -
-//    property after you initialize it
+  a: "tc-[dark]",
 
-console.log("Tutorial 2 :", property);
+  ".btn-primary": "bg-[primary] ph-1rem pv-8px br-3rem fw-600",
 
-// Tutorial 2 : Make your first styled element
+  "nav>a": "tc-[sub-dark] fw-500 fs-1.1rem",
 
-MakeStyle(".my-style", "tc-[neutral-100] p-1rem");
+  "nav>a.active": "tc-[dark] fw-700 td-underline",
 
-// Tutorial 3 : Make multi custom properties
+  ".fx-ctr": "display-flex ai-center jc-center",
 
-MyProps = {
-  dis: ["display"],
+  ".fx-str": "display-flex flex-parent-[flex-start]",
 
-  "fx-par": ["align-items", "justify-content"],
+  ".logo": "display-flex ai-center jc-center gap-8px",
+
+  ".header":
+    "position-fixed t-0 l-0 r-0 ph-2rem pv-1rem display-flex flex-parent-center jc-[sb]",
+
+  ".logo-name": "fs-1.2rem",
+
+  ".hero": "fs-3rem",
+
+  ".hero-desc": "fw-500",
+
+  ".flex-wrapper":
+    "w-100% display-flex flex-parent-center fx-wrap-wrap ai-stretch gap-2rem",
+
+  ".fx-wrapper-nofull":
+    "w-100% display-flex flex-parent-center fx-wrap-wrap ai-[md-full]",
+
+  ".fx-start-col": "display-flex fd-[col] flex-parent-[flex-start]",
+
+  ".feature-desc": "ta-justify",
 };
 
-defineProps(MyProps);
-
-// Tutorial 4 : Make multi custom styles
-
-MyStyles = {
-  ".flex": "dis-flex",
-
-  ".fx-ctr": "dis-flex fx-par-center",
-
-  body: "w-100vw h-100svh bg-[neutral-900] dis-flex fx-par-center fd-column p-2rem",
-
-  footer: "w-100% dis-flex fx-par-center p-2rem post-fixed b-0",
-
-  "footer>p": "tc-[accent-400] fs-14px fw-500",
+let MyProps = {
+  "fx-po": ["justifyContent", "alignItems"],
 };
 
-makeStyles(MyStyles);
-
-tenoxui();
+MultiProps(MyProps);
+MultiStyles(MyStyles);
+TenoxUI();
