@@ -4,45 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../global.css" />
+    <meta name="description" content="Starter Pack TenoxUI [ HTML ]" />
+    <!-- Style -->
+    <link rel="preload" href="./src/style/index.css" as="style" />
+    <link rel="stylesheet" href="./src/style/index.css" />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/tenoxui@latest/dist/css/tui.min.css"
+      as="style"
+    />
     <link
       rel="stylesheet"
-      href="../node_modules/tenoxui/dist/css/index.min.css"
+      href="https://cdn.jsdelivr.net/npm/tenoxui@latest/dist/css/tui.min.css"
     />
-    <style>
-      :root {
-        --dark: #0d0d0d;
-        --light: #ecf9fc;
-      }
-      .figtree {
-        font-family: "figtree", sans-serif;
-      }
-    </style>
+    <!-- Script -->
+    <script defer src="https://cdn.jsdelivr.net/npm/tenoxui@0.4.25/dist/js/tui.js"></script>
   </head>
-  <body class="figtree">
-    <header class="header bg-red" hidden></header>
-    <h1>TenoxUI Pages Template</h1>
-    <p>Include Multi Props and Multi Styles simple usage from TenoxUI v0.3.0</p>
-
-    <script type="module">
-      import TenoxUI, {
-        MakeProp,
-        MakeStyle,
-        MultiStyles,
-        MultiProps,
-      } from "../node_modules/tenoxui/dist/js/index.js";
-
-      let MyStyles = {
-        body: "bg-[dark] w-100% h-mn-100svh tc-[light] display-flex flex-parent-center fd-[col]",
-      };
-
-      let MyProps = {
-        "fx-po": ["justifyContent", "alignItems"],
-      };
-
-      MultiProps(MyProps);
-      MultiStyles(MyStyles);
-      TenoxUI();
-    </script>
+  <body>
+    <h1 class="my-style">Tenox<span class="tc-[primary-500]">UI</span></h1>
+    <p class="fw-500 fs-1.2rem ta-center tc-[neutral-400] text-style-italic">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+      debitis.
+    </p>
+    <footer>
+      <p>Copyright &copy; 2023 Your Name. All Rights Reserved.</p>
+    </footer>
+    <!-- Script -->
+    <script defer src="./src/script/index.js"></script>
   </body>
 </html>

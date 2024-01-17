@@ -1,0 +1,36 @@
+:root {
+  /* Palette by goodpallete.io */
+
+  /* Primary: Green Juice */
+  --primary-100: #f2fff5;
+  --primary-200: #c7ffd0;
+  --primary-300: #99fba5;
+  --primary-400: #6bf373;
+  --primary-500: #3de33d;
+  --primary-600: #25b41c;
+  --primary-700: #1b850d;
+  --primary-800: #145506;
+  --primary-900: #0b2603;
+
+  /* Accent: Vermilion Cinnabar */
+  --accent-100: #fff5f2;
+  --accent-200: #ffd1c7;
+  --accent-300: #fca69b;
+  --accent-400: #f5766e;
+  --accent-500: #e84141;
+  --accent-600: #b81e1e;
+  --accent-700: #870e0e;
+  --accent-800: #570707;
+  --accent-900: #260303;
+
+  /* Neutral */
+  --neutral-100: #fafcfb;
+  --neutral-200: #ecf0ec;
+  --neutral-300: #dde3de;
+  --neutral-400: #cfd6d0;
+  --neutral-500: #c1c9c1;
+  --neutral-600: #98a198;
+  --neutral-700: #70786f;
+  --neutral-800: #4a4f48;
+  --neutral-900: #232622;
+}
