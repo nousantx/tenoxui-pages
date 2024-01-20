@@ -40,6 +40,9 @@ makeStyles({
   ".def-dark,.dark": "bg-[neutral-900] tc-[neutral-100]",
   ".text-primary": "tc-[primary-500]",
   html: "scroll-smooth",
+  // Watermark
+  ".watermark":
+    "post-fixed b-0 r-0 bg-[trans-bg] ph-1rem pv-8px radius-tl-1rem opa-0.7",
 });
 
 moreColor();

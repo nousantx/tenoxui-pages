@@ -1,0 +1,53 @@
+:root {
+  /* Primary: Huelveño Horizon */
+  --primary-100: #f2f8ff;
+  --primary-200: #bcdeff;
+  --primary-300: #85c8fc;
+  --primary-400: #4db7f6;
+  --primary-500: #17a8eb;
+  --primary-600: #088cba;
+  --primary-700: #026d88;
+  --primary-800: #004b57;
+  --primary-900: #002326;
+
+  /* Accent: Rouge Red */
+  --accent-100: #fff2f2;
+  --accent-200: #ffcbcb;
+  --accent-300: #fba2a8;
+  --accent-400: #f27787;
+  --accent-500: #e04c67;
+  --accent-600: #b22849;
+  --accent-700: #831637;
+  --accent-800: #550c26;
+  --accent-900: #260513;
+
+  /* Neutral */
+  --neutral-100: #fafbfc;
+  --neutral-200: #e6e8ea;
+  --neutral-300: #d2d5d7;
+  --neutral-400: #bfc2c5;
+  --neutral-500: #abb0b3;
+  --neutral-600: #888d8f;
+  --neutral-700: #656a6c;
+  --neutral-800: #434849;
+  --neutral-900: #222626;
+
+  /* Test Pallete */
+
+  --neutral-800: #1d1e1f;
+  --neutral-900: #111213;
+  --nav-bg: #1112137a;
+  --prim-opa: linear-gradient(45deg, var(--neutral-800), var(--accent-800));
+  --thumb-null: linear-gradient(45deg, var(--accent-600), var(--accent-700));
+  --trans-bg: rgba(18, 20, 20, 0.5);
+  --top-trans: linear-gradient(to top, transparent, black);
+  --sign-btn: 2px solid var(--primary-500);
+}
+
+* {
+  font-family: "poppins", Sans-Serif;
+}
+
+#signin:hover {
+  text-decoration: none;
+}
