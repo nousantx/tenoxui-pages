@@ -15,7 +15,8 @@
 .mi,
 .mi-line,
 .mi-round,
-.mi-sharp .ms-line,
+.mi-sharp,
+.ms-line,
 .ms-round,
 .ms-sharp {
   font-weight: 400;
